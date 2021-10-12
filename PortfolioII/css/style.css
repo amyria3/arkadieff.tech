@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Secular One','Bebas Neue','Fjalla One', sans-serif;
+}
+
+body {
+    position: inherit;
+    width: 100em;
+    height: 100em;
+    max-width: 100vw;
+    padding: 50px;
+
+    background: rgb(225, 226, 228);
+}
+
+/*MENUE*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap'); /*Für Namen, Menue und Seitentitel*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Open+Sans:wght@300&display=swap'); /*For paragraphes in pages*/
+
+ul {
+    font-family: 'Secular One','Bebas Neue','Fjalla One', sans-serif;
+
+    list-style: none;
+    display: flex;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+ul a {
+    font-family: 'Secular One','Bebas Neue','Fjalla One', sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(48, 39, 39);
+    font-size: 18px;
+    line-height: 24px;
+    padding: 5px;
+    margin: 5px;
+}
+
+ul a:hover {
+    color: rgb(99, 0, 0);
+    font-size: 30px;
+}
+
+/*TITLE (vertikal links)*/
+
+#header {
+    position: static;
+    min-height: 200px;
+    margin: 50px 200px 50px 50px;
+    background-color: salmon; /*markieren*/
+}
+
+
+h1 {
+    font-family: 'Secular One','Bebas Neue','Fjalla One', sans-serif;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#header h1 {
+    color: linear-gradient(180deg, #601827 0%, #1A43B1 100%);
+}
+
+/* position:0 0 0 0; would be equal to? 
+position: absolute -> all pictures over each other, WHY?! */
+
+/*einzelne Seiten*/
+.page {
+    display: block;
+    margin: 100px 200px 50px 50px;
+    min-height: 600px;
+    max-width: 90vw;
+    overflow: scroll;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+#splash {
+    background-color: rgb(61, 61, 50);
+}
+#portfolio {
+    background-color: rgb(61, 61, 50);
+}
+#aboutMe {
+    background-color: rgb(61, 61, 50);
+}
+
+
+
+/*----------------------
+
+/* Bild strecken*/
+/* img {  all (?) pictures can be targeted this way although it seems very unspecifical */
+/* why was the picture to the left-top corner? The div inside of which the picture is shouldn't be there */
+/* because elements with position:absolute dont take influence on other elements and our headers position WAS absolute. */
