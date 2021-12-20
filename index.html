@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css_and_js/style.css" rel="stylesheet">
+    <link href="css_and_js/script.js">
+    <script language="javascript" type="text/javascript" src="scrolls.jvsr"></script>
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">digital products design</h1>
+        <h1 id="subtitle">Marias Journey</h1>
+    </div>
+
+    <div id="menue">
+        <ul class="start">
+            <div class="button" id="menueButton">
+                <a onclick="portfolio_js_function()" href="#portfolio">projects</a>
+            </div>
+            <div class="button" id="menueButton">
+                <a onclick="portfolio_js_function()" href="#contact">contact</a>
+            </div>
+        </ul>
+    </div>
+
+    <div id="scrolls">
+
+        <!--1,FIRST SECTION-->
+        <div id="splash_aboutMe">
+
+            <div id="splash">
+                    <img src="pics/background/BlueRed_with_Face.png" alt="Comic-Face" id="splashImg">
+            </div>
+
+            <div id="aboutMe">   
+                    <p class="dunkel">
+                        I developed an interest in the IT industry and decided to pursue technical skills such as programming, in order to change into a technical career. I started to learn some python 2020 and attended a Bootcamp for UX-/UI-Design at Ironhack in 2021. I build this web page to improve my CSS and HTML skills.<br>
+                        Towards my personal abckground: I am a citizen of Israel, and a child of three countries—Russia, Israel, and Germany. From a young age I have commanded three languages—Russian, Hebrew, and German. I spent my early childhood in Russia and Israel, and the age of 14 moved to Germany where I successfully completed my schooling (the German ‘Abitur‘, which is equivalently to A-levels in the UK). I then started a Bachelors in Philosophy, which I successfully completed in 2016. Alongside my studies I gave art lessons to children and pursued a my personal interest of composing music. I became a mother in 2014 and studied Logic for a semester in 2016. Since 2016 I continued to explore creative opportunities in writing and composing.<br></p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--2, SECOND SECTION-->
+        <div id="portfolio">
+
+            <div id="portfolio_h1">
+                <h1>projects</h1>
+            </div>
+
+            <div id="content">
+
+                <grid_item id="1"> 
+                    <p>Many people in North America and Europe suffer from insomnia. The causes are diverse: from very simple things such as too much coffee (or too many conflicting activities) to bigger issues like stress, decease or medication - or even traumata and losses. When sleeping issues persist, despite the absence of the afore mentioned triggers, the medical field refers to this as primary insomnia. On the other hand, many people occasionally sleep poorly without being sick at all. <br>
+                    It fortunately happens to be the case that some methods of cognitive behavioral therapy for insomnia are useful for people in both groups. Based on this—and as my penultimate project at IronHack — I developed s concept for an App, including a prototype, which the end user can use for self-therapy or to improve his or her related to sleep. Since the effectiveness of online insomnia therapy in general has been proven, there is a high chance that my app would be effective if it were developed.</p>
+                </grid_item>
+                
+                <grid_item id="h1_and_h2">
+    
+                    <h2>Soft-Landing:</h2>
+                    <h3>Get used to <strong>getting to bed well</strong></h3>
+                
+                </grid_item>
+            
+                <grid_item class="screen" id="cell_6">
+                    <figure>
+                        <img class="screenImg" src='pics/soft_landing/mainsoft_landing_app.jpg' alt="Main Routine">
+                        <figcaption>Let's take you on <br> an aesthetic journey</figcaption>
+                    </figure>
+                </grid_item>
+                
+                <grid_item class="screen" id="cell_7">
+                    <figure>            
+                        <img class="screenImg" src='pics/soft_landing/question_cardsoft_landing_app.jpg' alt="Main Routine: Question cards">
+                        <figcaption>Reflect on your day in a peaceful moode</figcaption>
+                    </figure> 
+                </grid_item>
+                
+                <grid_item class="screen" id="cell_8">
+                    <figure>    
+                        <img class="screenImg" src='pics/soft_landing/statisticssoft_landing_app.jpg' alt="Statistics">
+                        <figcaption>Observe your <br> development</figcaption>
+                    </figure>
+                </grid_item>
+
+            </div>          
+        </div>
+
+        <!--3, THIRD SECTION-->
+
+        <div id="contact" style="background-image: url('pics/background/Small_BlueRed_without_Face.png')">
+            
+            <div id="card">
+
+                <div class="button" id="contactButton">
+                    <a href="mailto:arkadieff.digital.design@gmail.de">email</a>
+                </div>
+
+                <div class="button" id="contactButton">
+                    <!-- Calendly link widget begin -->
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/maria-arkadieff/30min'});return false;">schedule time with me</a>
+                <!-- Calendly link widget end -->
+                </div>
+            </div>
+        </div> 
+
+    </div> <!--Scrolls-->
+
+</body>
+</html>
+
+
+
+<!-- TO SYNC:
+    
+In VS Code, open a local directory you wish to sync to the remote server (or create an empty directory that you wish to first download the contents of a remote server folder in order to edit locally).
+Ctrl+Shift+P on Windows/Linux or Cmd+Shift+P on Mac open command palette, run SFTP: config command.
+A basic configuration file will appear named sftp.json under the .vscode directory. Edit the parameters to match your setup. -->
